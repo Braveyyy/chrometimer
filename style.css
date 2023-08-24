@@ -1,0 +1,28 @@
+.main{
+    
+}
+.onButton{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border:0px;
+    border-style: dashed;
+    border-color: red;
+    margin:0;
+    top:20%;
+    left:50%;
+    font-size: 30px;
+}
+.timerField{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.p{
+    position: absolute;
+    display: flex;
+    left:80%;
+    margin:0;
+}
