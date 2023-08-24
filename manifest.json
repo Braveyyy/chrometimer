@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Timer",
+    "version": "1.0.1",
+    "author": "latifasedyeame@gmail.com",
+    "default_locale": "en",
+    "description": "Timer extension for chrome.",
+    "action": {
+        "deafult_icon": "icons/Concerned.png",
+        "default_title": "Timer",
+        "default_popup": "popup.html"
+    },
+    "icons": { 
+        "128": "icons/Concerned.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
