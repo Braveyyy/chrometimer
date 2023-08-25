@@ -3,7 +3,7 @@
     "name": "Chrome Timer",
     "version": "1.0.1",
     "author": "latifasedyeame@gmail.com",
-    "default_locale": "en",
+    
     "description": "Timer extension for chrome.",
     "action": {
         "deafult_icon": "icons/Concerned.png",
