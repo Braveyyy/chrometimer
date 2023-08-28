@@ -1,13 +1,31 @@
-//var time = document.getElementById("timeNum").value;    
+document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("powerBtn").addEventListener("click", chromeTimer);
-
+var timerDisplay = document.querySelector('#timeCountdown');
+var intervalID;
 function chromeTimer()
 {
-    // Change CSS to show timer (Already done when form is submitted.)
-    alert("hello");
+    var studyTime = 60 * 25; // Hard coded variable for amount of time studied.
+    var timerTime = studyTime, minutes, seconds;
+    clearInterval(intervalID);
+    intervalID = setInterval(function () {
+        minutes = parseInt(timerTime / 60, 10);
+        seconds = parseInt(timerTime % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        timerDisplay.textContent = minutes + ":" + seconds;
+
+        if(--timerTime < 0)
+        {
+            timerTime = studyTime;
+        }
+        
+    }, 1000);
     // Start timer
     
     // End timer
 
     // Send user a notification
 }
+
+});
