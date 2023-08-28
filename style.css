@@ -1,6 +1,6 @@
 html{
-    width: 150px;
-    height: 75px;
+    width: 95px;
+    height: 60px;
 }
 /*https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
 input::-webkit-outer-spin-button,
@@ -27,7 +27,7 @@ input[type=image]{
     border-color: purple;
 }
 .timerField{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +37,33 @@ input[type=image]{
     margin: 0;
 }
 p{
-    text-align: center;
+    position: relative;
+    left: 0%;
+    bottom: 25%;
     border:0px;
     border-style: dashed;
     border-color: blue;
-    margin-top: 0;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    margin: 0;
+}
+button{
+    position: relative;
+    left: 15%;
+    bottom: 40%;
+    margin: 0;
+    background-image: url("icons/power-off-regular-24.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+    transition-duration: 1s;
+}
+button:hover{
+    border: 1px;
+    border-style: groove;
+    border-color: red;
 }
