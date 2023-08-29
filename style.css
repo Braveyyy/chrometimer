@@ -36,6 +36,9 @@ input[type=image]{
     border-color: red;
     margin: 0;
 }
+.timerTracker{
+    display: none;
+}
 p{
     position: relative;
     left: 0%;
@@ -67,3 +70,4 @@ button:hover{
     border-style: groove;
     border-color: red;
 }
+

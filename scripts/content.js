@@ -4,6 +4,8 @@ var timerDisplay = document.querySelector('#timeCountdown');
 var intervalID;
 function chromeTimer()
 {
+    document.getElementById("tField").style.display = "none";
+    document.getElementById("tTracker").style.display = "block";
     var studyTime = 60 * 25; // Hard coded variable for amount of time studied.
     var timerTime = studyTime, minutes, seconds;
     clearInterval(intervalID);
@@ -13,7 +15,7 @@ function chromeTimer()
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        timerDisplay.textContent = minutes + ":" + seconds;
+        timerDisplay.innerHTML = minutes + ":" + seconds;
 
         if(--timerTime < 0)
         {
