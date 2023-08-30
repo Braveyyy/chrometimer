@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
+chrome.runtime.sendMessage({ cmd: 'GET_TIME' }, response => {
+    if (response.time) {
+        const time = new Date(response.time);
+        chromeTimer(time)
+    }
+    });
 document.getElementById("powerBtn").addEventListener("click", chromeTimer);
 var timerDisplay = document.querySelector('#timeCountdown');
 var intervalID;
 function chromeTimer()
 {
-    document.getElementById("tField").style.display = "none";
-    document.getElementById("tTracker").style.display = "block";
+    //document.getElementById("tField").style.display = "none";
+    //document.getElementById("tTracker").style.display = "block";
     var studyTime = 60 * 25; // Hard coded variable for amount of time studied.
     var timerTime = studyTime, minutes, seconds;
     clearInterval(intervalID);

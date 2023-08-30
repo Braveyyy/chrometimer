@@ -1,5 +1,5 @@
 html{
-    width: 95px;
+    width: 200px; /*90w/60h*/
     height: 60px;
 }
 /*https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp*/
@@ -8,53 +8,36 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number]{
-    position: absolute;
-    display: flex;
-    bottom: 10%;
-    left: 25%;
-    width: 20%;
-    height: 30%;
-}
-input[type=image]{
-    position: absolute;
-    display: flex;
-    bottom: 5%;
-    left: 55%;
-    margin: 0;
-    border:0px;
-    border-style: dashed;
-    border-color: purple;
-}
 .timerField{
-    position: absolute;
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    border:0px;
-    border-style: dashed;
-    border-color: red;
     margin: 0;
 }
 .timerTracker{
-    display: none;
+    display: flex;  
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    bottom: 40%;
 }
 p{
     position: relative;
     left: 0%;
     bottom: 25%;
-    border:0px;
-    border-style: dashed;
-    border-color: blue;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     margin: 0;
 }
 button{
-    position: relative;
-    left: 15%;
-    bottom: 40%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    left: 60%;
     margin: 0;
     background-image: url("icons/power-off-regular-24.png");
     background-repeat: no-repeat;
@@ -69,5 +52,8 @@ button:hover{
     border: 1px;
     border-style: groove;
     border-color: red;
+}
+span{
+    font-size: 30px;
 }
 
