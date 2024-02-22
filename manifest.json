@@ -17,7 +17,7 @@
         "128": "icons/Concerned.png"
     },
     "background": {
-        "scripts":["scripts/background.js"]
+        "service_worker":"scripts/background.js"
     },
     "content_scripts":[
         {

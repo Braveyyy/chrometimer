@@ -39,14 +39,21 @@ button{
     align-items: end;
     left: 60%;
     margin: 0;
-    background-image: url("icons/power-off-regular-24.png");
+    /*background-image: url("icons/power-off-regular-24.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    */
     height: 30px;
     width: 30px;
     border: none;
     background-color: white;
     transition-duration: 1s;
+}
+#startButton{
+
+}
+#stopButton{
+    
 }
 button:hover{
     border: 1px;
